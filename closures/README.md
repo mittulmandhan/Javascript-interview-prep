@@ -1,6 +1,6 @@
 # closures
 
-A closure is a function having access to the parent scope, even after the parent function has closed.
+* A closure is a function having access to the parent scope, even after the parent function has closed.
 
 **example**
 ````
@@ -22,9 +22,9 @@ console.log(add());
 3
 ````
 
-Explanation:
-The variable add is assigned the return value of a self-invoking function.
-The self-invoking function only runs once. It sets the counter to zero (0), and returns a function expression.
-This way add becomes a function.
-This is called a JavaScript closure. It makes it possible for a function to have "private" variables.
-The counter is protected by the scope of the anonymous function, and can only be changed using the add function.
+**Explanation:**
+* The variable add is assigned the return value of a self-invoking function.
+* The self-invoking function only runs once. It sets the counter to zero (0), and returns a function expression.
+* This way add becomes a function.
+* This is called a JavaScript closure. It makes it possible for a function to have "private" variables.
+* The counter is protected by the scope of the anonymous function, and can only be changed using the add function.
