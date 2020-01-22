@@ -2,15 +2,25 @@
 
 A closure is a function having access to the parent scope, even after the parent function has closed.
 
+**example**
+````
 for Example: 
 var add = (function () {
   var counter = 0;
   return function () {counter += 1; return counter}
 })();
 
-add();
-add();
-add();
+console.log(add());
+console.log(add());
+console.log(add());
+````
+
+**output**
+````
+1
+2
+3
+````
 
 Explanation:
 The variable add is assigned the return value of a self-invoking function.
